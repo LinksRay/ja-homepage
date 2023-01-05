@@ -138,7 +138,7 @@ const Gallery: FC = () => {
   }, [current])
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col my-8">
       <h2 className="flex justify-center items-center w-[80px] h-[46px] mb-6 rounded-full text-2xl bg-white/70 shadow-slate-200 shadow-md select-none cursor-default">写真</h2>
       <div className="flex flex-col p-6 items-center rounded-lg shadow-sm shadow-slate-400 bg-white/80">
         <div className="flex justify-center">
@@ -146,7 +146,7 @@ const Gallery: FC = () => {
             <Image.PreviewGroup>
               {showingImg.map((src, index) => {
                 return (
-                  <div className="flex flex-col items-center">
+                  <div className="flex flex-col items-center" key={src}>
                     <Image
                       src={src}
                       width={200}
