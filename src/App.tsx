@@ -14,6 +14,10 @@ function App() {
       <Gallery></Gallery>
       <Letter></Letter>
       <Secret></Secret>
+      <div className="flex flex-col my-8">
+        <h2 className="flex justify-center items-center w-[350px] h-[46px] mb-6 rounded-full text-2xl bg-white/70 shadow-slate-200 shadow-md select-none cursor-default">Below now is unavailable...</h2>
+        <div className="w-[1288px]"></div>
+      </div>
     </div>
   )
 }

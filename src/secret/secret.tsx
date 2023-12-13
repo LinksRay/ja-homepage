@@ -1,6 +1,6 @@
 import { FC, memo, useEffect, useRef, useState } from "react";
 import LineQR from '/qr2.jpg'
-import WeChatQR from '/qr1.png'
+import WeChatQR from '/qr1.jpg'
 
 const Secret: FC = () => {
   const [showNumber, setShowNumber] = useState(false)
@@ -17,14 +17,14 @@ const Secret: FC = () => {
       })
       setTimeout(() => {
         setCurrentInput('')
-      }, 10000)
+      }, 5000)
     })
   }, [])
 
   useEffect(() => {
     if (!currentInput) return
     console.log(currentInput)
-    if (currentInput.toLocaleLowerCase() === 'wechat' || currentInput.toLocaleLowerCase() === 'line') {
+    if (currentInput.toLocaleLowerCase() === ' ' || currentInput.toLocaleLowerCase() === 'enter') {
       setShowNumber(true)
     }
   }, [currentInput])
@@ -38,7 +38,7 @@ const Secret: FC = () => {
           <img src={WeChatQR}></img>
         </div>
         <div className="flex-1">
-          Line
+          Instagram
           <img src={LineQR}></img>
         </div>
       </div>
