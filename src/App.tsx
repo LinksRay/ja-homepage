@@ -11,7 +11,7 @@ function App() {
       style={{backgroundImage: `url(${BG})`}}
     >
       <h1 className="px-8 py-3 my-8 bg-white/70 shadow-slate-200 shadow-md rounded-full text-black/75 text-4xl text-center select-none cursor-default">Welcome to my homepage!</h1>
-      <Gallery></Gallery>
+      {/* <Gallery></Gallery> */}
       <Letter></Letter>
       <Secret></Secret>
       <div className="flex flex-col my-8">
